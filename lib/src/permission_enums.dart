@@ -85,32 +85,32 @@ class PermissionGroup {
 
   /// Android: Camera
   /// iOS: Photos (Camera Roll and Camera)
-  static const PermissionGroup camera = PermissionGroup._(1);
+  static const PermissionGroup camera = PermissionGroup._(0);
 
 
   /// Android: Fine and Coarse Location
   /// iOS: CoreLocation (Always and WhenInUse)
-  static const PermissionGroup location = PermissionGroup._(3);
+  static const PermissionGroup location = PermissionGroup._(1);
 
   /// Android:
   ///   When running on Android < Q: Fine and Coarse Location
   ///   When running on Android Q and above: Background Location Permission
   /// iOS: CoreLocation - Always
-  static const PermissionGroup locationAlways = PermissionGroup._(4);
+  static const PermissionGroup locationAlways = PermissionGroup._(2);
 
   /// Android: Fine and Coarse Location
   /// iOS: CoreLocation - WhenInUse
-  static const PermissionGroup locationWhenInUse = PermissionGroup._(5);
+  static const PermissionGroup locationWhenInUse = PermissionGroup._(3);
 
 
   /// Android: Microphone
   /// iOS: Microphone
-  static const PermissionGroup microphone = PermissionGroup._(7);
+  static const PermissionGroup microphone = PermissionGroup._(4);
 
 
   /// Android: Nothing
   /// iOS: Photos
-  static const PermissionGroup photos = PermissionGroup._(9);
+  static const PermissionGroup photos = PermissionGroup._(5);
 
   /// Android: Ignore Battery Optimizations
   static const PermissionGroup ignoreBatteryOptimizations =
@@ -118,7 +118,7 @@ class PermissionGroup {
 
   /// Android: Notification
   /// iOS: Notification
-  static const PermissionGroup notification = PermissionGroup._(16);
+  static const PermissionGroup notification = PermissionGroup._(6);
 
   /// The unknown permission only used for return type, never requested
   static const PermissionGroup unknown = PermissionGroup._(17);
