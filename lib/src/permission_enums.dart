@@ -112,16 +112,12 @@ class PermissionGroup {
   /// iOS: Photos
   static const PermissionGroup photos = PermissionGroup._(5);
 
-  /// Android: Ignore Battery Optimizations
-  static const PermissionGroup ignoreBatteryOptimizations =
-      PermissionGroup._(15);
-
   /// Android: Notification
   /// iOS: Notification
   static const PermissionGroup notification = PermissionGroup._(6);
 
   /// The unknown permission only used for return type, never requested
-  static const PermissionGroup unknown = PermissionGroup._(17);
+  static const PermissionGroup unknown = PermissionGroup._(7);
 
   static const List<PermissionGroup> values = <PermissionGroup>[
     camera,
