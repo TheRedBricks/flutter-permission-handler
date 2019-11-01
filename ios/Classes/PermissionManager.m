@@ -79,26 +79,14 @@
             return [EventPermissionStrategy new];
             case PermissionGroupCamera:
             return [AudioVideoPermissionStrategy new];
-            case PermissionGroupContacts:
-            return [ContactPermissionStrategy new];
             case PermissionGroupLocation:
             case PermissionGroupLocationAlways:
             case PermissionGroupLocationWhenInUse:
-            return [[LocationPermissionStrategy alloc] initWithLocationManager];
-            case PermissionGroupMediaLibrary:
-            return [MediaLibraryPermissionStrategy new];
+            return [[LocationPermissionStrategy alloc] initWithLocationManager];       
             case PermissionGroupMicrophone:
-            return [AudioVideoPermissionStrategy new];
-            case PermissionGroupPhone:
-            return [PhonePermissionStrategy new];
+            return [AudioVideoPermissionStrategy new];   
             case PermissionGroupPhotos:
             return [PhotoPermissionStrategy new];
-            case PermissionGroupReminders:
-            return [EventPermissionStrategy new];
-            case PermissionGroupSensors:
-            return [SensorPermissionStrategy new];
-            case PermissionGroupSpeech:
-            return [SpeechPermissionStrategy new];
             case PermissionGroupNotification:
             return [NotificationPermissionStrategy new];
         default:
